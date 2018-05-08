@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oddbureau.mosayq">
+
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.oddbureau.mosayq.base.MosayqApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MosayqTheme">
+        <provider
+            android:name="com.commonsware.cwac.provider.StreamProvider"
+            android:authorities="com.oddbureau.mosayq.streamprovider"
+            android:exported="true">
+            <meta-data
+                android:name="com.commonsware.cwac.provider.STREAM_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.oddbureau.mosayq.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.oddbureau.mosayq.activities.MosayqActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MosayqTheme.NoActionBar" />
+
+        <service
+            android:name="com.oddbureau.mosayq.services.MosayqArtSource"
+            android:description="@string/source_description"
+            android:icon="@drawable/ic_source"
+            android:label="@string/source_title">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+
+            <meta-data
+                android:name="color"
+                android:value="@color/colorPrimary" />
+            <!-- A settings activity is optional -->
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".activities.SettingsActivity" />
+        </service>
+
+        <activity android:name="com.oddbureau.mosayq.base.RealmActivity" />
+        <activity android:name="com.oddbureau.mosayq.activities.GalleryItemDetailActivity" />
+        <activity android:name="com.oddbureau.mosayq.activities.PaletteEditorActivity" />
+        <activity
+            android:name="com.oddbureau.mosayq.activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:exported="true"
+            android:parentActivityName="com.oddbureau.mosayq.activities.MosayqActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.oddbureau.mosayq.activities.MosayqActivity" />
+        </activity>
+    </application>
+
+</manifest>

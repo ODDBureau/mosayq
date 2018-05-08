@@ -1,0 +1,2 @@
+include ':Mosayq', ':chroma'
+project(':chroma').projectDir = new File('libs/chroma/chroma')

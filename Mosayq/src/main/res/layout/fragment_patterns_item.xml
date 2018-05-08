@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_pattern_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryAlpha50"
+        android:src="@drawable/img_lines_diagonal"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_pattern_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <cn.refactor.library.SmoothCheckBox
+            android:id="@+id/cb_pattern_item_select"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:color_checked="@color/colorAccent"
+            app:color_unchecked="@color/colorPrimary"
+            app:color_unchecked_stroke="@color/colorAccent"
+            app:duration="100"
+            app:stroke_width="4dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

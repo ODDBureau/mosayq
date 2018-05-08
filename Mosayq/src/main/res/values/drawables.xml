@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_palettes" type="drawable">@drawable/ic_colors</item>
+    <item name="ic_menu_grid" type="drawable">@drawable/ic_grid_pictures</item>
+    <item name="ic_menu_settings" type="drawable">@drawable/ic_settings</item>
+    <item name="ic_menu_patterns" type="drawable">@drawable/ic_pattern</item>
+</resources>

@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "type": "lines",
+    "category": "horizontal",
+    "isSelected": true,
+    "image": "img_lines_horizontal"
+  },
+  {
+    "id": 2,
+    "type": "lines",
+    "category": "vertical",
+    "isSelected": true,
+    "image": "img_lines_vertical"
+  },
+  {
+    "id": 3,
+    "type": "lines",
+    "category": "diagonal",
+    "isSelected": true,
+    "image": "img_lines_diagonal"
+  },
+  {
+    "id": 4,
+    "type": "mosaics",
+    "category": "squares",
+    "isSelected": true,
+    "image": "img_mosaics_squares"
+  },
+  {
+    "id": 5,
+    "type": "triangles",
+    "category": "rising-sun",
+    "isSelected": true,
+    "image": "img_triangles_risingsun"
+  },
+  {
+    "id": 6,
+    "type": "triangles",
+    "category": "chaos",
+    "isSelected": true,
+    "image": "img_triangles_chaos"
+  },
+  {
+    "id": 7,
+    "type": "circles",
+    "category": "ripple-multi-color",
+    "isSelected": true,
+    "image": "img_circles_ripplemulticolor"
+  },
+  {
+    "id": 8,
+    "type": "lines",
+    "category": "traces",
+    "isSelected": true,
+    "image": "img_lines_traces"
+  },
+  {
+    "id": 9,
+    "type": "mosaics",
+    "category": "arcs",
+    "isSelected": true,
+    "image": "img_mosaics_arcs"
+  },
+  {
+    "id": 10,
+    "type": "mosaics",
+    "category": "voronoi-triangles",
+    "isSelected": true,
+    "image": "img_mosaics_voronoitriangles"
+  },
+  {
+    "id": 11,
+    "type": "mosaics",
+    "category": "voronoi-polygons",
+    "isSelected": true,
+    "image": "img_mosaics_voronoipolygons"
+  },
+  {
+    "id": 12,
+    "type": "mosaics",
+    "category": "polygons",
+    "isSelected": true,
+    "image": "img_mosaics_polygons"
+  },
+  {
+    "id": 13,
+    "type": "mosaics",
+    "category": "pixels",
+    "isSelected": true,
+    "image": "img_mosaics_pixels"
+  },
+  {
+    "id": 14,
+    "type": "mosaics",
+    "category": "triangles",
+    "isSelected": true,
+    "image": "img_mosaics_triangles"
+  },
+  {
+    "id": 15,
+    "type": "geometric",
+    "category": "gradient-simple",
+    "isSelected": true,
+    "image": "img_geometric_gradientsimple"
+  },
+  {
+    "id": 16,
+    "type": "geometric",
+    "category": "gradient-spiral",
+    "isSelected": true,
+    "image": "img_geometric_gradientspiral"
+  },
+  {
+    "id": 17,
+    "type": "geometric",
+    "category": "progressive",
+    "isSelected": true,
+    "image": "img_geometric_progressive"
+  }
+]
