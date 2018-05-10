@@ -2,7 +2,7 @@
 
 Auto-generated and minimalistic Wallpapers for Muzei
 
-An open-source product, created at [ODD Bureau](https://oddbureau.com) as an artsy side-project.
+An open-source product, created at [ODD Bureau](https://www.oddbureau.com) as an artsy side-project.
 
 Mosayq, a Muzei extension, enables you to choose from 17 algorithmic patterns and generate beautiful wallpapers based on your own choice of colors.
 

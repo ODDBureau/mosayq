@@ -72,8 +72,8 @@ class MosayqActivity :
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        loadingContainer = findViewById<ViewGroup>(R.id.rl_loading_container)
-        fabButton = findViewById<FloatingActionButton>(R.id.fab_add)
+        loadingContainer = findViewById(R.id.rl_loading_container)
+        fabButton = findViewById<View>(R.id.fab_add) as FloatingActionButton?
 
         fabButton?.setOnClickListener { onMenuAddSelected(selectedFragmentIndex) }
 

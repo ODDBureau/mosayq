@@ -178,7 +178,7 @@ class PaletteEditorActivity: RealmActivity()  {
 
     private fun exitActivity(){
 
-        if(adapter?.updated == true)
+        //if(adapter?.updated == true)
             if(colorsHex.size < 3) {
                 AlertDialog.Builder(this)
                         .setTitle(resources.getString(R.string.dialog_palette_without_min_colors_title))

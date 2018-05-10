@@ -102,7 +102,7 @@
     <string name="dialog_confirm_cancel">Cancel</string>
 
     <string name="dialog_palette_without_min_colors_title">Discard Palette</string>
-    <string name="dialog_palette_without_min_colors_desc">A Palette must have at least 3 colors.\nExiting will discard this palette.</string>
+    <string name="dialog_palette_without_min_colors_desc">A Palette must have at least 3 colors.\nExiting will discard the changes.</string>
 
     <string name="dialog_palette_remove_palette_title">Remove Palette</string>
     <string name="dialog_palette_remove_palette_desc">Are you sure you want to remove this Palette?</string>
