@@ -90,6 +90,8 @@
     <string name="source_description">Procedural mosayq backgrounds</string>
 
     <string name="share">Share</string>
+    <string name="button_set_wallpaper">Set Wallpaper</string>
+    <string name="action_set_wallpaper">Set Wallpaper as:</string>
 
     <string name="snack_palette_created">Palette created</string>
     <string name="snack_palette_removed">Palette removed</string>

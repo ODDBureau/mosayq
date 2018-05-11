@@ -8,6 +8,7 @@ import android.support.v7.widget.ShareActionProvider
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -56,6 +57,16 @@ class GalleryItemDetailActivity : RealmActivity() {
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL) //use this to cache
                 .into(findViewById<ImageView>(R.id.iv_gallery_item_detail_image))
+
+
+        val btnSetWallpaper = findViewById<Button>(R.id.btn_set_wallpaper)
+        btnSetWallpaper.setOnClickListener({
+            val intent = Intent(Intent.ACTION_ATTACH_DATA)
+            intent.addCategory(Intent.CATEGORY_DEFAULT)
+            intent.setDataAndType(Uri.parse(imageUri), "image/*")
+            intent.putExtra("mimeType", "image/*")
+            this.startActivity(Intent.createChooser(intent, resources.getString(R.string.action_set_wallpaper)))
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

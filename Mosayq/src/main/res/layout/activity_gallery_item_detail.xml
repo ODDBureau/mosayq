@@ -17,7 +17,14 @@
 
     </HorizontalScrollView>
 
-
+    <Button
+        android:id="@+id/btn_set_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_set_wallpaper"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+    
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

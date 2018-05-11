@@ -48,7 +48,6 @@ class ImageMosaicCreator : ImageCreator {
             }
 
             "squares" -> {
-                //colors.remove(backgroundColor)
                 drawSquares(canvas, backgroundColor, 14f, 25)
             }
 
