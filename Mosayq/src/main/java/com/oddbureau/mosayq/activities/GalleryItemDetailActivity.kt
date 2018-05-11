@@ -13,6 +13,9 @@ import android.widget.Button
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.chootdev.csnackbar.Duration
+import com.chootdev.csnackbar.Snackbar
+import com.chootdev.csnackbar.Type
 import com.oddbureau.mosayq.R
 import com.oddbureau.mosayq.base.Constants
 import com.oddbureau.mosayq.base.RealmActivity
@@ -67,6 +70,12 @@ class GalleryItemDetailActivity : RealmActivity() {
             val ins = contentResolver.openInputStream(Uri.parse(imageUri))
             wpm.setStream(ins)
 
+            Snackbar.with(this, null).apply {
+                Snackbar.type(Type.SUCCESS)
+                Snackbar.message(resources.getString(R.string.snack_wallpaper_updated))
+                Snackbar.duration(Duration.SHORT)
+                Snackbar.show()
+            }
         })
     }
 
