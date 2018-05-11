@@ -1,5 +1,6 @@
 package com.oddbureau.mosayq.activities
 
+import android.app.WallpaperManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -61,11 +62,11 @@ class GalleryItemDetailActivity : RealmActivity() {
 
         val btnSetWallpaper = findViewById<Button>(R.id.btn_set_wallpaper)
         btnSetWallpaper.setOnClickListener({
-            val intent = Intent(Intent.ACTION_ATTACH_DATA)
-            intent.addCategory(Intent.CATEGORY_DEFAULT)
-            intent.setDataAndType(Uri.parse(imageUri), "image/*")
-            intent.putExtra("mimeType", "image/*")
-            this.startActivity(Intent.createChooser(intent, resources.getString(R.string.action_set_wallpaper)))
+
+            val wpm = WallpaperManager.getInstance(this)
+            val ins = contentResolver.openInputStream(Uri.parse(imageUri))
+            wpm.setStream(ins)
+
         })
     }
 
